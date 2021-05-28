@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="wrap"></div>
+    <script>
+       let data = {
+           message : {
+               title: '你好！',
+               todo: '打篮球',
+               time: '时间2020.5.21',
+               isLike: false,
+           },
+       }
+
+       //需求: 根据 动态创建div标签  div里面是多个p标签 然后渲染到页面上
+       let a = 1
+       let str =    <div>
+                        <h3>${data.message.title}</h3>
+                        <p>${data.message.todo}</p>
+                        <p>${data.message.time}</p>
+                        <p>$</p>
+                    </div>
+    </script>
+</body>
+</html>
